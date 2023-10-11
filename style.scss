@@ -17,8 +17,10 @@ header {
   position: fixed;
   padding: 16px 0;
   width: 100%;
-  // background: var(--colr-primary);
-  background: transparent;
+  // background: rgba(135,0,130,.5);
+  background: rgba(135,0,130,.5);
+  // background: transparent;
+  
   z-index: 9999;
 }
 
@@ -99,19 +101,21 @@ header {
   width: 50%;
 
   .myName {
+    font-family: 'Yellowtail', cursive;
     color: var(--colr-accent2);
-    font-size: .7em;
-    font-weight: 700;
+    font-size: .8em;
+    white-space: nowrap;
+    // letter-spacing: 4px;
   }
 
   .dev {
-    font-size: 1.2em;
-    // letter-spacing: 9.5px;
+    font-size: 1.048em;
+    // letter-spacing: .5px;
     font-weight: 900;
   }
 
   & h1 {
-    font-size: 4.8em;
+    font-size: 5em;
     font-weight: 900;
     color: #fff;
     line-height: 65px;
@@ -140,7 +144,8 @@ header {
   }
 
   & .btn1:hover {
-    background: var(--colr-accent);
+    color: var(--colr-white);
+    background: var(--colr-accent2);
   }
 
   .btn2 {
@@ -151,8 +156,9 @@ header {
   }
 
   & .btn2:hover {
-    color: var(--colr-black);
-    background: var(--colr-accent);
+    color: var(--colr-accent2);
+    border-color: var(--colr-accent2);
+    // background: var(--colr-white);
   }
 }
 
@@ -188,7 +194,7 @@ header {
     }
 
     & img {
-      width: 80px;
+      width: 85px;
     }
 
     &__icons {
@@ -213,7 +219,7 @@ header {
       & small {
         font-family: 'Montserrat', 'Poppins', serif;
         font-size: 1.2em;
-        margin-top: .5em;
+        margin-top: .7em;
         letter-spacing: 2px;
         color: var(--colr-white);
       }
@@ -258,7 +264,7 @@ header {
 .about-content {
   // position: relative;
   margin-inline: auto;
-  width: min(90%, 1200px);
+  width: min(90%, 1250px);
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -270,7 +276,7 @@ header {
     img {
       display: block;
       width: 100%;
-      height: 420px;
+      height: 450px;
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -285,7 +291,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     right: 0;
     width: 53%;
     height: 80%;
@@ -294,10 +300,31 @@ header {
     border-radius: 4px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, .5);
 
-    & p {
+    & h3 {
+      font-family: 'Yellowtail', cursive;
       text-align: left;
+      font-size: 2em;
+      font-weight: 700;
+      color: var(--colr-accent2);
+      display: inline;
     }
 
+
+    & p {
+      text-align: left;
+      font-size: 1.3em;
+    }
+
+  }
+
+  h3::before {
+    position: absolute;
+    left: 170px;
+    top: 37px;
+    content: '';
+    width: 25%;
+    height: 2px;
+    background: var(--colr-accent2);
   }
 }
 
@@ -325,7 +352,7 @@ header {
 
   & h2 {
     font-size: 3em;
-    color: var(--colr-secondary);
+    color: var(--colr-low-light);
     text-align: center;
     margin-bottom: 2em;
   }
@@ -377,7 +404,6 @@ header {
     background: rgba(0, 0, 0, 0.8);
     // background: rgba(233, 22, 22, 0.7);
     // box-shadow: 4px 4px 15px rgba(0, 0, 0, .5);
-    // transform: translateY(281px);
     transition: all .5s ease-in-out;
 
     & h2 {
@@ -399,11 +425,12 @@ header {
       font-size: 1em;
       width: 150px;
       padding: 4px;
-      color: #000;
+      color: #fff;
       margin: 1em;
-      border: none;
+      border: 2px solid transparent;
       border-radius: 2px;
       letter-spacing: 1px;
+      background: var(--colr-low-light);
     }
   }
 
@@ -411,11 +438,13 @@ header {
     opacity: 1;
     width: 100%;
     height: 100%;
+    transform: scale(1.025);
   }
 
   & button:hover {
     color: var(--colr-white);
-    background: var(--colr-secondary);
+    border-color: var(--colr-accent2);
+    background: var(--colr-accent2);
   }
 }
 
@@ -426,7 +455,7 @@ header {
   // background: dodgerblue;
 
   & h2 {
-    color: var(--colr-secondary);
+    color: var(--colr-low-light);
     font-size: 3em;
     text-align: center;
     margin-bottom: 1em;
@@ -455,34 +484,36 @@ header {
   justify-content: center;
 
   label {
+    color: var(--colr-low-light);
     font-size: 1.1em;
-    margin-top: .5em;
+    margin: .5em 0 .3em 0;
   }
 
   input {
     font-size: 1em;
     padding: 12px;
-    border: 2px solid grey;
+    border: 2px solid var(--colr-low-light);
     border-radius: 4px;
-    margin-bottom: .5em;
+    margin-bottom: .8em;
     background: #ededed;
   }
 
   input:focus {
     outline: transparent;
-    border: 2px solid var(--colr-secondary);
+    border: 2.5px solid var(--colr-accent2);
   }
 
   textarea {
     font-size: 1.3em;
     padding: 12px;
     background: #ededed;
-    border: 2px solid grey;
+    border: 2px solid var(--colr-low-light);
+    border-radius: 4px;
   }
 
   textarea:focus {
     outline: transparent;
-    border: 2px solid var(--colr-secondary);
+    border: 2.5px solid var(--colr-accent2);
   }
 
   button {
@@ -493,16 +524,13 @@ header {
     border-radius: 4px;
     border: none;
     color: var(--colr-white);
-    background: var(--colr-secondary);
+    background: var(--colr-low-light);
   }
 
   button:hover {
-    color: var(--colr-secondary);
-    background: var(--colr-white);
-  }
-
-  .message {
-    color: var(--colr-black);
+    // color: var(--colr-black);
+    box-shadow: 0 0 15px var(--colr-accent2);
+    background: var(--colr-accent2);
   }
   
 }
@@ -525,14 +553,16 @@ header {
     & p {
       font-weight: 300;
       font-family: 'Montserrate', 'Poppins', serif;
-      color: #b1b1b1;
+      color: var(--colr-low-light);
       letter-spacing: 1px;
     }
 
     & span {
-      font-size: 1.2em;
-      font-weight: 600;
-      color: var(--colr-secondary);
+      font-family: 'Yellowtail', cursive;
+      font-size: 1.3em;
+      letter-spacing: 1px;
+      // font-weight: 600;
+      color: var(--colr-accent2);
     }
   }
 
@@ -544,15 +574,15 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3em;
+    gap: 2em;
 
     & .fa-brands {
       font-size: 28px;
-      color: var(--colr-white);
+      color: var(--colr-low-light);
     }    
   }
   & .fa-brands:hover {
-    color: var(--colr-secondary);
+    color: var(--colr-accent2);
   }
 }
 

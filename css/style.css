@@ -17,7 +17,7 @@ header {
   position: fixed;
   padding: 16px 0;
   width: 100%;
-  background: transparent;
+  background: rgba(135, 0, 130, 0.5);
   z-index: 9999;
 }
 
@@ -92,16 +92,17 @@ header {
   width: 50%;
 }
 .hero-content__left .myName {
+  font-family: "Yellowtail", cursive;
   color: var(--colr-accent2);
-  font-size: 0.7em;
-  font-weight: 700;
+  font-size: 0.8em;
+  white-space: nowrap;
 }
 .hero-content__left .dev {
-  font-size: 1.2em;
+  font-size: 1.048em;
   font-weight: 900;
 }
 .hero-content__left h1 {
-  font-size: 4.8em;
+  font-size: 5em;
   font-weight: 900;
   color: #fff;
   line-height: 65px;
@@ -126,7 +127,8 @@ header {
   background: var(--colr-white);
 }
 .hero-content__left .btn1:hover {
-  background: var(--colr-accent);
+  color: var(--colr-white);
+  background: var(--colr-accent2);
 }
 .hero-content__left .btn2 {
   color: var(--colr-white);
@@ -135,8 +137,8 @@ header {
   padding: 7px 45px;
 }
 .hero-content__left .btn2:hover {
-  color: var(--colr-black);
-  background: var(--colr-accent);
+  color: var(--colr-accent2);
+  border-color: var(--colr-accent2);
 }
 
 .hero-content__right {
@@ -166,7 +168,7 @@ header {
   margin-bottom: 1em;
 }
 .skills-content img {
-  width: 80px;
+  width: 85px;
 }
 .skills-content__icons {
   display: grid;
@@ -188,7 +190,7 @@ header {
 .skills-content__icons-inner small {
   font-family: "Montserrat", "Poppins", serif;
   font-size: 1.2em;
-  margin-top: 0.5em;
+  margin-top: 0.7em;
   letter-spacing: 2px;
   color: var(--colr-white);
 }
@@ -226,7 +228,7 @@ header {
 
 .about-content {
   margin-inline: auto;
-  width: min(90%, 1200px);
+  width: min(90%, 1250px);
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -238,7 +240,7 @@ header {
 .about-content__left img {
   display: block;
   width: 100%;
-  height: 420px;
+  height: 450px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -250,7 +252,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   right: 0;
   width: 53%;
   height: 80%;
@@ -259,8 +261,26 @@ header {
   border-radius: 4px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
+.about-content__right h3 {
+  font-family: "Yellowtail", cursive;
+  text-align: left;
+  font-size: 2em;
+  font-weight: 700;
+  color: var(--colr-accent2);
+  display: inline;
+}
 .about-content__right p {
   text-align: left;
+  font-size: 1.3em;
+}
+.about-content h3::before {
+  position: absolute;
+  left: 170px;
+  top: 37px;
+  content: "";
+  width: 25%;
+  height: 2px;
+  background: var(--colr-accent2);
 }
 
 .about-content__social-icons {
@@ -283,7 +303,7 @@ header {
 }
 .portfolio h2 {
   font-size: 3em;
-  color: var(--colr-secondary);
+  color: var(--colr-low-light);
   text-align: center;
   margin-bottom: 2em;
 }
@@ -342,20 +362,23 @@ header {
   font-size: 1em;
   width: 150px;
   padding: 4px;
-  color: #000;
+  color: #fff;
   margin: 1em;
-  border: none;
+  border: 2px solid transparent;
   border-radius: 2px;
   letter-spacing: 1px;
+  background: var(--colr-low-light);
 }
 .portfolio-content__inner-right:hover {
   opacity: 1;
   width: 100%;
   height: 100%;
+  transform: scale(1.025);
 }
 .portfolio-content__inner button:hover {
   color: var(--colr-white);
-  background: var(--colr-secondary);
+  border-color: var(--colr-accent2);
+  background: var(--colr-accent2);
 }
 
 .contact {
@@ -364,7 +387,7 @@ header {
   background: var(--colr-white);
 }
 .contact h2 {
-  color: var(--colr-secondary);
+  color: var(--colr-low-light);
   font-size: 3em;
   text-align: center;
   margin-bottom: 1em;
@@ -390,30 +413,32 @@ header {
   justify-content: center;
 }
 .form label {
+  color: var(--colr-low-light);
   font-size: 1.1em;
-  margin-top: 0.5em;
+  margin: 0.5em 0 0.3em 0;
 }
 .form input {
   font-size: 1em;
   padding: 12px;
-  border: 2px solid grey;
+  border: 2px solid var(--colr-low-light);
   border-radius: 4px;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.8em;
   background: #ededed;
 }
 .form input:focus {
   outline: transparent;
-  border: 2px solid var(--colr-secondary);
+  border: 2.5px solid var(--colr-accent2);
 }
 .form textarea {
   font-size: 1.3em;
   padding: 12px;
   background: #ededed;
-  border: 2px solid grey;
+  border: 2px solid var(--colr-low-light);
+  border-radius: 4px;
 }
 .form textarea:focus {
   outline: transparent;
-  border: 2px solid var(--colr-secondary);
+  border: 2.5px solid var(--colr-accent2);
 }
 .form button {
   font-size: 1.1em;
@@ -423,14 +448,11 @@ header {
   border-radius: 4px;
   border: none;
   color: var(--colr-white);
-  background: var(--colr-secondary);
+  background: var(--colr-low-light);
 }
 .form button:hover {
-  color: var(--colr-secondary);
-  background: var(--colr-white);
-}
-.form .message {
-  color: var(--colr-black);
+  box-shadow: 0 0 15px var(--colr-accent2);
+  background: var(--colr-accent2);
 }
 
 .footer {
@@ -450,13 +472,14 @@ header {
 .footer-content__left p {
   font-weight: 300;
   font-family: "Montserrate", "Poppins", serif;
-  color: #b1b1b1;
+  color: var(--colr-low-light);
   letter-spacing: 1px;
 }
 .footer-content__left span {
-  font-size: 1.2em;
-  font-weight: 600;
-  color: var(--colr-secondary);
+  font-family: "Yellowtail", cursive;
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  color: var(--colr-accent2);
 }
 .footer-content__right {
   width: 50%;
@@ -465,14 +488,14 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3em;
+  gap: 2em;
 }
 .footer-content .footer-content__icons .fa-brands {
   font-size: 28px;
-  color: var(--colr-white);
+  color: var(--colr-low-light);
 }
 .footer-content .fa-brands:hover {
-  color: var(--colr-secondary);
+  color: var(--colr-accent2);
 }
 
 /*# sourceMappingURL=style.css.map */
