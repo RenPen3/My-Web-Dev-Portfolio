@@ -120,8 +120,8 @@ header {
   text-transform: uppercase;
 }
 .hero-content__left span {
-  -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: #FFFFFF;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: var(--colr-accent);
   color: transparent;
 }
 .hero-content__left p {
@@ -138,7 +138,7 @@ header {
   margin: 0 0 2em 0.5em;
 }
 .hero-content__left .btn1 {
-  padding: 8px 32px;
+  padding: 12px 40px;
   margin-right: 1em;
   border: none;
   color: var(--colr-primary);
@@ -151,7 +151,7 @@ header {
   color: var(--colr-white);
   border: 2px solid var(--colr-white);
   background: transparent;
-  padding: 7px 45px;
+  padding: 12px 50px;
 }
 .hero-content__left .btn2:hover {
   color: var(--colr-accent);

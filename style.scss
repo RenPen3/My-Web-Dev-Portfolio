@@ -151,8 +151,8 @@ header {
   }
 
   & span {
-    -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: #FFFFFF;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: var(--colr-accent);
     color: transparent
   }
 
@@ -172,7 +172,7 @@ header {
   }
 
   & .btn1 {
-    padding: 8px 32px;
+    padding: 12px 40px;
     // margin-top: 9em;
     margin-right: 1em;
     border: none;
@@ -189,7 +189,8 @@ header {
     color: var(--colr-white);
     border: 2px solid var(--colr-white);
     background: transparent;
-    padding: 7px 45px;
+    padding: 12px 50px;
+
   }
 
   & .btn2:hover {
