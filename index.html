@@ -1,125 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Web Devloper Portfolio</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/resets.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-</head>
-<body>
-    
-  <header class="header">
-    <nav class="header-nav">
-      <a href="#" class="header-nav__logo">Logo</a>
-      <ul class="header-nav__menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <a href="#" class="header-nav__ham">
-        <!-- <div > -->
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Devloper Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/resets.css">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  </head>
+
+  <body>
+
+    <header class="header">
+      <nav class="header-nav">
+        <a href="#" class="header-nav__logo">Logo</a>
+        <ul class="header-nav__menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#" class="header-nav__ham">
+          <!-- <div > -->
           <div class="lines line1"></div>
           <div class="lines line2"></div>
           <div class="lines line3"></div>
-        <!-- </div> -->
-      </a>
-    </nav>
-  </header>
-
-
-  <div class="mobile">
-    <div class="mobile__content">
-      <ul class="mobile__menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contract</a></li>
-      </ul>
+          <!-- </div> -->
+        </a>
+      </nav>
+    </header>
+    <div class="mobile">
+      <div class="mobile__content">
+        <ul class="mobile__menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contract</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
 
-  <main>
-    <section class="hero">
-      <!-- <div class="squares squares1"></div>
+    <main>
+      <section class="hero">
+        <!-- <div class="squares squares1"></div>
       <div class="squares squares2"></div>
       <div class="squares squares3"></div> -->
 
-      <div class="hero-content">
-        <div class="hero-content__left">
-          <h1> <span class="myName">René D Perez</span> WEB<br><span class="dev">DEVELOPER</span></h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit doloribus explicabo consectetur adipisicing</p>
-          <!-- <div class="hero-content__btns"> -->
+        <div class="hero-content">
+          <div class="hero-content__left">
+            <h1> <span class="myName"></span>Shopify<span class="dev" style=""> Developer</span>
+            </h1>
+            <p>Lorem ipsum dolor sit amet, consectetur<br>adipisicing elit doloribus explicabo
+            </p>
             <a href="#portfolio" class="btn btn1">Portfolio</a>
             <a href="#about" class="btn btn2">About</a>
-          <!-- <button href="#portfolio" class="btn btn1">Portfolio</button>
-          <button href="#about" class="btn btn2">About</button> -->
-          <!-- </div> -->
-        </div>
-        <div class="hero-content__right">
-          <img src="img/CoverLetterPicture_v2.png" alt="my portrait">
-        </div>
-      </div>
-    </section>
-
-    <section class="skills" id="skills">
-      <div class="skills-content">
-        <h2>Skills</h2>
-        <div class="skills-content__icons">
-          <div class="skills-content__icons-inner">
-            <img src="img/html-five.svg" alt="HTML5 Logo">
-            <small>HTML</small>
           </div>
-          <div class="skills-content__icons-inner">
-            <img src="img/css3.svg" alt="CSS Logo">
-            <small>CSS</small>
-          </div>
-          <div class="skills-content__icons-inner">
-            <img src="img/javascript.svg" alt="JavaScript Logo">
-            <small>JavaScript</small>
-          </div>
-          <div class="skills-content__icons-inner">
-            <img src="img/figma.svg" alt="Figma Logo">
-            <small>Figma</small>
-          </div>
-          <div class="skills-content__icons-inner">
-            <img src="img/php.svg" alt="PHP Logo">
-            <small>PHP</small>
-          </div>
-          <div class="skills-content__icons-inner">
-            <img src="img/wordpress.svg" alt="WordPress Logo">
-            <small>WordPress</small>
-          </div>
-          <div class="skills-content__icons-inner">
-            <img src="img/bootstrap.svg" alt="Bootstrap Logo">
-            <small>Bootstrap</small>
-          </div>
-          <div class="skills-content__icons-inner">
-            <img src="img/mysql.svg" alt="MySQL Logo">
-            <small>MySQL</small>
-          </div>
-          <div class="skills-content__icons-inner">
-            <img src="img/laravel.svg" alt="Laravel Logo">
-            <small>Laravel</small>
+          <div class="hero-content__right">
+            <img src="img/social_profile_img2.png" alt="my portrait">
           </div>
         </div>
+      </section>
 
-      </div>
-    </section>
+      <section style="position: relative;overflow: hidden;" class="skills" id="skills">
+        <div
+          style="position: absolute;top: 0;padding: 12px;color: #FFF;font-size: 26px;overflow: hidden;text-transform: uppercase;"
+          class="skill__banner">* This
+          is a banner for something * This is a banner for something * This is a banner for
+          something *
+        </div>
+        <div class="skills-content">
+          <h2>Skills</h2>
+          <div class="skills-content__icons">
+            <div class="skills-content__icons-inner">
+              <img src="img/html-five.svg" alt="HTML5 Logo">
+              <small>HTML</small>
+            </div>
+            <div class="skills-content__icons-inner">
+              <img src="img/css3.svg" alt="CSS Logo">
+              <small>CSS</small>
+            </div>
+            <div class="skills-content__icons-inner">
+              <img src="img/javascript.svg" alt="JavaScript Logo">
+              <small>JavaScript</small>
+            </div>
+            <div class="skills-content__icons-inner">
+              <img src="img/figma.svg" alt="Figma Logo">
+              <small>Figma</small>
+            </div>
+            <div class="skills-content__icons-inner">
+              <img src="img/php.svg" alt="PHP Logo">
+              <small>PHP</small>
+            </div>
+            <div class="skills-content__icons-inner">
+              <img src="img/wordpress.svg" alt="WordPress Logo">
+              <small>WordPress</small>
+            </div>
+            <div class="skills-content__icons-inner">
+              <img src="img/bootstrap.svg" alt="Bootstrap Logo">
+              <small>Bootstrap</small>
+            </div>
+            <div class="skills-content__icons-inner">
+              <img src="img/mysql.svg" alt="MySQL Logo">
+              <small>MySQL</small>
+            </div>
+            <div class="skills-content__icons-inner">
+              <img src="img/laravel.svg" alt="Laravel Logo">
+              <small>Laravel</small>
+            </div>
+          </div>
 
-    <section class="about" id="about">
-      <h2>About Me</h2>
-      <div class="about-content">
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
           <div class="about-content__left">
             <img src="img/me_image_6_Opt.jpg" alt="Me on a laptop">
           </div>
           <article class="about-content__right">
-            <h3>My Journey</h3> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis in deleniti, quo odit labore vero placeat nisi praesentium totam et eos natus eveniet quidem suscipit unde excepturi quos ex, esse voluptatibus perferendis repudiandae aspernatur beatae quidem suscipit unde excepturi quos ex, esse voluptatibus perferendis repudiandae aspernatur beatae!quidem suscipit unde excepturi quos ex, esse voluptatibus quidem suscipit unde excepturi quos ex, esse voluptatibus perferendis repudiandae aspernatur beatae quidem suscipit unde excepturi quos.</p>
+            <h3>My Journey</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis in deleniti, quo
+              odit labore vero
+              placeat nisi praesentium totam et eos natus eveniet quidem suscipit unde excepturi
+              quos ex, esse
+              voluptatibus perferendis repudiandae aspernatur beatae quidem suscipit unde excepturi
+              quos ex, esse
+              voluptatibus perferendis repudiandae aspernatur beatae!quidem suscipit unde excepturi
+              quos ex, esse
+              voluptatibus quidem suscipit unde excepturi quos ex, esse voluptatibus perferendis
+              repudiandae aspernatur
+              beatae quidem suscipit unde excepturi quos.</p>
             <div class="about-content__social-icons">
               <a href="#">
                 <i class="fa-brands fa-linkedin"></i>
@@ -132,42 +147,48 @@
               </a>
             </div>
           </article>
-      </div>
-    </section>
+        </div>
+      </section>
 
-    <section class="portfolio" id="portfolio">
-      <div class="portfolio-content">
-        <h2>Portfolio</h2>
-        <div class="portfolio-content__inner">
-          <div class="portfolio-content__inner-box">
-            <div class="portfolio-content__inner-left">
-              <img src="img/MPHP.png" alt="Project 1 Image">
-            </div>
-            <div class="portfolio-content__inner-right">
-              <h2>PHP Form</h2>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus hic quibusdam necessitatibus incidunt accusamus atque voluptatibus! Delectus modi sed fugit beatae numquam</p>
-              <div class="portfolio-content__inner-right-buttons">
-                <button href="#">Live</button>
-                <button href="#">Code</button>
+      <section class="portfolio" id="portfolio">
+        <div class="portfolio-content">
+          <h2>Portfolio</h2>
+          <div class="portfolio-content__inner">
+            <div class="portfolio-content__inner-box">
+              <div class="portfolio-content__inner-left">
+                <img src="img/MPHP.png" alt="Project 1 Image">
+              </div>
+              <div class="portfolio-content__inner-right">
+                <h2>Data Record Landing Page</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus hic quibusdam
+                  necessitatibus
+                  incidunt accusamus atque voluptatibus! Delectus modi sed fugit beatae numquam</p>
+                <div class="portfolio-content__inner-right-buttons">
+                  <button href="#">Live</button>
+                  <button href="#">Code</button>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div id="project2" class="portfolio-content__inner-box">
-            <div class="portfolio-content__inner-left">
-              <img src="img/MPHP.png" alt="Project 2 image">
-            </div>
-            <div class="portfolio-content__inner-right">
-              <h2>Real Estate Website</h2>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus hic quibusdam necessitatibus incidunt accusamus atque voluptatibus! Delectus modi sed fugit beatae numquam</p>
-              <div class="portfolio-content__inner-right-buttons">
-                <button href="#">Live</button>
-                <button href="#">Code</button>
+            <div class="portfolio-content__inner-box">
+              <div class="portfolio-content__inner-left">
+                <img src="img/MPHP.png" alt="Project 1 Image">
+              </div>
+              <div class="portfolio-content__inner-right">
+                <h2>Dashboard App with API</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus hic quibusdam
+                  necessitatibus
+                  incidunt accusamus atque voluptatibus! Delectus modi sed fugit beatae numquam</p>
+                <div class="portfolio-content__inner-right-buttons">
+                  <button href="#">Live</button>
+                  <button href="#">Code</button>
+                </div>
               </div>
             </div>
-          </div>
 
-          <!-- <div class="portfolio-content__inner-box">
+
+
+            <!-- <div class="portfolio-content__inner-box">
             <div class="portfolio-content__inner-left">
               <img src="img/man_in_woods_Opt.jpg" alt="">
             </div>
@@ -181,7 +202,7 @@
             </div>
           </div> -->
 
-          <!-- <div class="portfolio-content__inner-box">
+            <!-- <div class="portfolio-content__inner-box">
             <div class="portfolio-content__inner-left">
               <img src="img/bakery_Opt.jpg" alt="">
             </div>
@@ -194,51 +215,53 @@
               </div>
             </div>
           </div> -->
-      </div>
+          </div>
 
-    </section>
-
-    <section class="contact" id="contact">
-      <h2>Contact</h2>
-      <section class="contact-content">
-        <form class="form">
-          <label for="text">First Name</label>
-          <input type="text" placeholder="First Name">
-
-          <label for="text">E-mail</label>
-          <input type="text" placeholder="example@gmail.com">
-
-          <label for="message" class="message">Message</label>
-          <textarea name="message" id="message" cols="30" rows="8" style="resize: none;" placeholder="Your message here..."></textarea>
-          <button>Send Message</button>
-        </form>
       </section>
-    </section>
-  </main>
-  
-  <footer id="footer" class="footer">
-    <div class="footer-content">
-      <div class="footer-content__left">
-        <p>All Rights Reserved <a href=""><span>René D Perez</span></a> &copy 2023</p>
-      </div>
-      <div class="footer-content__right">
-        <div class="footer-content__icons">
-          <a href="#">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-          <a href="#">
-          <i class="fa-brands fa-instagram"></i>
-          </a>
-          <a href="#">
-          <i class="fa-brands fa-youtube"></i>
-          </a>
+
+      <!-- <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <section class="contact-content">
+          <form class="form">
+            <label for="text">First Name</label>
+            <input type="text" placeholder="First Name">
+
+            <label for="text">E-mail</label>
+            <input type="text" placeholder="example@gmail.com">
+
+            <label for="message" class="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="8" style="resize: none;"
+              placeholder="Your message here..."></textarea>
+            <button>Send Message</button>
+          </form>
+        </section>
+      </section> -->
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-content">
+        <div class="footer-content__left">
+          <p>Copyright&copy; 2024 <a href=""><span>René D Perez</span></a> All Rights Reserved</p>
+        </div>
+        <div class="footer-content__right">
+          <div class="footer-content__icons">
+            <a href="#">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
 
-  <script src="js/app.js"></script>
-  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-</body>
+    <script src="js/app.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  </body>
+
 </html>

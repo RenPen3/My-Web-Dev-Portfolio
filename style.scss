@@ -1,8 +1,12 @@
 :root {
-  --colr-primary: #2E112D;
-  --colr-secondary: #B01C33;
+  // --colr-primary: #2E112D;
+  // --colr-primary: #000b52;
+  --colr-primary: #0023ff;
+  // --colr-secondary: #B01C33;
+  --colr-secondary: #0023ff;
   --colr-contigent: #EF4339;
-  --colr-accent: #FFDBC5;
+  // --colr-accent: #FFDBC5;
+  --colr-accent: #FFDC00;
   --colr-accent2: #FF5FF9;
   --colr-low-light: #793077;
   --colr-white: #FAFAFA;
@@ -17,9 +21,10 @@ header {
   position: fixed;
   padding: 16px 0;
   width: 100%;
+  background: transparent;
   // background: rgba(135,0,130,.5);
   // background: rgba(135,0,130,.5);
-  background: rgb(0, 0, 0, .4);
+  // background: rgb(0, 0, 0, .4);
   
   z-index: 9999;
 }
@@ -70,17 +75,23 @@ header {
 // hero 
 .hero {
   position: relative;
-  padding: 4em 0 0 0;
+  padding: 8em 0 0 0;
+  background: rgb(0,35,255);
+  background: linear-gradient(0deg, rgba(0,35,255,1) 0%, rgba(0,11,82,1) 100%);
+  // background: rgb(0,35,255);
+  // background: linear-gradient(180deg, rgba(0,35,255,1) 0%, rgba(0,11,82,1) 100%);
+  // background: rgb(0,86,255);
+  // background: linear-gradient(180deg, rgba(0,86,255,1) 0%, rgba(12,0,126,1) 100%);
   // background: var(--colr-primary);
-  background: rgb(46,17,45);
-  background: linear-gradient(0deg, rgba(46,17,45,1) 38%, rgba(135,0,130,1) 100%);
+  // background: rgb(46,17,45);
+  // background: linear-gradient(0deg, rgba(46,17,45,1) 38%, rgba(135,0,130,1) 100%);
 
   .hero-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-inline: auto;
-    width: min(90%, 1150px);
+    width: min(90%, 1200px);
   }
 }
 
@@ -116,7 +127,11 @@ header {
 }
 
 .hero-content__left {
-  width: 50%;
+  position: absolute;
+  top: 170px;
+  text-align: left;
+  width: min(90%, 1300px);
+  z-index: 0;
 
   .myName {
     font-family: 'Yellowtail', cursive;
@@ -126,24 +141,26 @@ header {
     // letter-spacing: 4px;
   }
 
-  .dev {
-    font-size: 1.048em;
-    // letter-spacing: .5px;
-    font-weight: 900;
-  }
-
   & h1 {
-    font-size: 5em;
+    font-size: 12em;
     font-weight: 900;
     color: #fff;
-    line-height: 65px;
+    line-height: 140px;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+  }
+
+  & span {
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #FFFFFF;
+    color: transparent
   }
 
   & p {
     font-family: 'Montserrat', 'Poppins', serif;
     font-size: 1.2em;
     color: #EDEDED;
-    margin: 1em 0 2em 0;
+    margin: 0 0 2em .5em;
   }
 
   & .btn {
@@ -151,6 +168,7 @@ header {
     border-radius: 4px;
     outline: transparent;
     font-weight: 600;
+    margin: 0 0 2em .5em;
   }
 
   & .btn1 {
@@ -163,8 +181,8 @@ header {
   }
 
   & .btn1:hover {
-    color: var(--colr-white);
-    background: var(--colr-accent2);
+    // color: var(--colr-white);
+    background: var(--colr-accent);
   }
 
   .btn2 {
@@ -175,19 +193,21 @@ header {
   }
 
   & .btn2:hover {
-    color: var(--colr-accent2);
-    border-color: var(--colr-accent2);
+    color: var(--colr-accent);
+    border-color: var(--colr-accent);
     // background: var(--colr-white);
   }
 }
 
 .hero-content__right {
-  width: 50%;
+  padding-top: 6em;
+  width: 60%;
+  z-index: 1;
 
 
   & img {
     display: block;
-    width: 100%;
+    width: 800px;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -199,7 +219,10 @@ header {
 // skills 
 .skills {
   padding: 100px 0;
-  background: var(--colr-primary);
+  // background: var(--colr-secondary);
+  background: rgb(0,35,255);
+  background: linear-gradient(180deg, rgba(0,35,255,1) 0%, rgba(0,11,82,1) 100%);
+  // background: #000b52;
 
   &-content {
     text-align: center;
@@ -247,7 +270,8 @@ header {
 
     &__icons-inner:hover {
       // border: 2px solid #FF5FF9;
-      border: 2px solid var(--colr-low-light);
+      // border: 2px solid var(--colr-low-light);
+      border: 2px solid var(--colr-accent);
     }
   }
 }
@@ -273,7 +297,9 @@ header {
   content: "";
   width: 100%;
   height: 50%;
-  background: var(--colr-primary);
+  // background: var(--colr-primary);
+  background: #000b52;
+
 }
 
 .about__piece {
@@ -606,12 +632,12 @@ header {
 
     & p {
       font-weight: 300;
-      font-family: 'Montserrate', 'Poppins', serif;
+      // font-family: 'Montserrate', 'Poppins', serif;
       color: grey;
     }
 
     & span {
-      font-family: 'Yellowtail', cursive;
+      // font-family: 'Yellowtail', cursive;
       font-size: 1.3em;
       letter-spacing: 1px;
       // font-weight: 600;
