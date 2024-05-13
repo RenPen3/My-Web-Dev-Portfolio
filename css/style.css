@@ -1,5 +1,5 @@
 :root {
-  --colr-primary: #0023ff;
+  --colr-primary: #000b52;
   --colr-secondary: #0023ff;
   --colr-contigent: #EF4339;
   --colr-accent: #FFDC00;
@@ -29,8 +29,8 @@ header {
   width: min(90%, 1300px);
 }
 .header-nav__logo {
-  font-size: 1.5em;
-  font-weight: 600;
+  font-size: 1.3em;
+  font-weight: 500;
   color: var(--colr-white);
 }
 .header-nav__menu {
@@ -40,9 +40,11 @@ header {
   gap: 2em;
 }
 .header-nav__menu a {
+  font-size: 1em;
   padding: 10px;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.3s ease-in-out;
   border-radius: 2px;
+  color: var(--colr-white);
 }
 .header-nav__menu a:hover {
   color: var(--colr-black);
@@ -55,15 +57,17 @@ header {
 
 .hero {
   position: relative;
-  padding: 8em 0 0 0;
+  padding: 5em 0 0 0;
   background: rgb(0, 35, 255);
   background: linear-gradient(0deg, rgb(0, 35, 255) 0%, rgb(0, 11, 82) 100%);
 }
 .hero .hero-content {
+  position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   margin-inline: auto;
+  margin-top: 4em;
   width: min(90%, 1200px);
 }
 
@@ -100,9 +104,8 @@ header {
 
 .hero-content__left {
   position: absolute;
-  top: 170px;
+  left: 0;
   text-align: left;
-  width: min(90%, 1300px);
   z-index: 0;
 }
 .hero-content__left .myName {
@@ -115,7 +118,7 @@ header {
   font-size: 12em;
   font-weight: 900;
   color: #fff;
-  line-height: 140px;
+  line-height: 160px;
   margin-bottom: 24px;
   text-transform: uppercase;
 }
@@ -130,42 +133,42 @@ header {
   color: #EDEDED;
   margin: 0 0 2em 0.5em;
 }
-.hero-content__left .btn {
+.hero-content__left a {
+  display: inline-block;
   font-size: 1em;
-  border-radius: 4px;
   outline: transparent;
   font-weight: 600;
-  margin: 0 0 2em 0.5em;
-}
-.hero-content__left .btn1 {
-  padding: 12px 40px;
-  margin-right: 1em;
-  border: none;
   color: var(--colr-primary);
-  background: var(--colr-white);
-}
-.hero-content__left .btn1:hover {
-  background: var(--colr-accent);
-}
-.hero-content__left .btn2 {
-  color: var(--colr-white);
-  border: 2px solid var(--colr-white);
-  background: transparent;
   padding: 12px 50px;
 }
-.hero-content__left .btn2:hover {
+.hero-content__left .btn-one {
+  margin-left: 0.5em;
+  border-radius: 4px;
+  background: var(--colr-accent);
+}
+.hero-content__left .btn-one:hover {
+  background: var(--colr-white);
+}
+.hero-content__left .btn-two {
   color: var(--colr-accent);
-  border-color: var(--colr-accent);
+  border: 2px solid var(--colr-accent);
+  background: transparent;
+  border-radius: 4px;
+}
+.hero-content__left .btn-two:hover {
+  color: var(--colr-secondary);
+  border-color: var(--colr-white);
+  background: var(--colr-white);
 }
 
 .hero-content__right {
-  padding-top: 6em;
+  padding-top: 2em;
   width: 60%;
   z-index: 1;
 }
 .hero-content__right img {
-  display: block;
-  width: 800px;
+  padding-top: 6em;
+  width: 100%;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

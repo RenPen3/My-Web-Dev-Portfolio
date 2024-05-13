@@ -22,13 +22,22 @@ li {
 }
 
 a {
-  color: #ffffff;
   letter-spacing: 1px;
   text-decoration: none;
 }
 
-button, .btn {
-  cursor: pointer;
+.btn-one {
+  display: inline-block;
+  /* cursor: pointer; */
+  padding: 1em;
+  margin-right: 1em;
+  background: var(--colr-white);
+}
+
+.btn-two {
+  display: inline-block;
+  /* cursor: pointer; */
+  border: 2px solid var(--colr-white);
 }
 
 img {
