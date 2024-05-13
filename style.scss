@@ -142,7 +142,7 @@ header {
     color: var(--colr-accent2);
     font-size: .8em;
     white-space: nowrap;
-    // letter-spacing: 4px;
+    // letter-spacing: 4px;O
   }
 
   & h1 {
@@ -262,7 +262,7 @@ header {
       align-items: center;
       border-radius: 4px;
       padding: 2em;
-      border: 2px solid rgba(121, 48, 119, .3);
+      border: 2px solid var(--colr-secondary);
       // border: 2px solid var(--colr-low-light);
 
       & small {
