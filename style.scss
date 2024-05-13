@@ -224,22 +224,30 @@ header {
 
 // skills 
 .skills {
+  position: relative;
   padding: 100px 0;
   // background: var(--colr-secondary);
   background: rgb(0,35,255);
   background: linear-gradient(180deg, rgba(0,35,255,1) 0%, rgba(0,11,82,1) 100%);
   // background: #000b52;
 
+  & h2 {
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 12em;
+    letter-spacing: 3px;
+    color: rgba(0, 11, 82, .5);
+    text-align: center;
+    // margin-bottom: 1em;
+    z-index: 0;
+  }
+
   &-content {
     text-align: center;
-
-    & h2 {
-      font-size: 3em;
-      letter-spacing: 3px;
-      color: var(--colr-white);
-      text-align: center;
-      margin-bottom: 1em;
-    }
+    width: min(90%, 900px);
+    margin-inline: auto;   
 
     & img {
       width: 85px;
@@ -277,7 +285,7 @@ header {
     &__icons-inner:hover {
       // border: 2px solid #FF5FF9;
       // border: 2px solid var(--colr-low-light);
-      border: 2px solid var(--colr-accent);
+      // border: 2px solid var(--colr-accent);
     }
   }
 }

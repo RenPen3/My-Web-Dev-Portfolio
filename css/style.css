@@ -176,19 +176,26 @@ header {
 }
 
 .skills {
+  position: relative;
   padding: 100px 0;
   background: rgb(0, 35, 255);
   background: linear-gradient(180deg, rgb(0, 35, 255) 0%, rgb(0, 11, 82) 100%);
 }
+.skills h2 {
+  text-transform: uppercase;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 12em;
+  letter-spacing: 3px;
+  color: rgba(0, 11, 82, 0.5);
+  text-align: center;
+  z-index: 0;
+}
 .skills-content {
   text-align: center;
-}
-.skills-content h2 {
-  font-size: 3em;
-  letter-spacing: 3px;
-  color: var(--colr-white);
-  text-align: center;
-  margin-bottom: 1em;
+  width: min(90%, 900px);
+  margin-inline: auto;
 }
 .skills-content img {
   width: 85px;
@@ -218,10 +225,6 @@ header {
   letter-spacing: 2px;
   color: var(--colr-white);
 }
-.skills-content__icons-inner:hover {
-  border: 2px solid var(--colr-accent);
-}
-
 .about {
   position: relative;
   padding: 120px 0;
