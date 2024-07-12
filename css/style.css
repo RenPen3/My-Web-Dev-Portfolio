@@ -379,7 +379,7 @@ header {
 .portfolio-content__inner-right h2 {
   font-size: 2em;
   margin-bottom: 0.3em;
-  text-align: center;
+  text-align: left;
   color: var(--colr-black);
 }
 .portfolio-content__inner-right p {
